@@ -6,6 +6,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d
+      - ./uwsgi:/
       - /tmp:/tmp
     depends_on:
       - hello_world
