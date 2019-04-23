@@ -5,7 +5,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx:/etc/nginx/conf.d
+      - ./nginx_development:/etc/nginx/conf.d
       - ./uwsgi:/uwsgi
       - /tmp:/tmp
     depends_on:
