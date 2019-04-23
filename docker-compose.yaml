@@ -10,8 +10,7 @@ services:
     depends_on:
       - hello_world
   hello_world:
-    build:
-      dockerfile : Dockerfile
+    image: asia.gcr.io/hsgitlab-777/hello-world:1.1
     volumes:
       - /tmp:/tmp
     command: uwsgi --ini uwsgi_development.ini
