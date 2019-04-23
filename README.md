@@ -27,3 +27,9 @@
       python3 manage.py migrate --settings=docker_hello_django.settings.production
       python3 manage.py runserver --settings=docker_hello_django.settings.production 0.0.0.0:8000
     ```
+- [*Nginx와 uWSGI간 통신 설정하기*](http://blog.ditullio.fr/2016/07/24/docker-django-uwsgi-nginx-web-app/)
+- [*컨테이너간 디렉토리 공유하기*](https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers)
+    ```
+    Note: 포트를 이용한 TCP통신보 패킷의 오버헤드가 적은 유닉스 소켓 통신이 더 빠르기 때문에,
+    컨테이너간(uWSGI, Nginx) 공유 디렉토리를 생성해 소켓을 공유하는 방법을 사용한다.
+    ```
