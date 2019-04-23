@@ -1,16 +1,17 @@
 version : '2'
 services:
   nginx:
-    image: nginx:latest # nginx 서비스에서 사용할 도커 이미지
+    image: nginx:latest
     ports:
       - "80:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d
-    depends_on: # 서비스 간의 종속성 표현
+      - /tmp:/tmp
+    depends_on:
       - hello_world
   hello_world:
     build:
       dockerfile : Dockerfile
-    ports:
-      - "8000:8000"
-    command: python3 manage.py runserver --settings=docker_hello_django.settings.developmentn 0.0.0.0:8000
+    volumes:
+      - /tmp:/tmp
+    command: uwsgi --ini uwsgi_development.ini

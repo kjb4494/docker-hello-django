@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9c31576-6347-403b-9062-6792fac53c6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker_hello_django/docker_hello_django/wsgi/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_hello_django/docker_hello_django/wsgi/wsgi_production.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi/uwsgi_development.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi/uwsgi_params" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uwsgi/uwsgi_production.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker_hello_django/docker_hello_django/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/docker_hello_django/docker_hello_django/wsgi/wsgi_development.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uwsgi/uwsgi_development.ini" beforeDir="false" afterPath="$PROJECT_DIR$/uwsgi/uwsgi_development.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,20 +60,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state relative-caret-position="240">
+              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uwsgi/uwsgi_development.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -101,11 +105,9 @@
         <option value="$PROJECT_DIR$/docker_hello_django/docker_hello_django/urls.py" />
         <option value="$PROJECT_DIR$/docker_hello_django/hello_world/views.py" />
         <option value="$PROJECT_DIR$/docker_hello_django/docker_hello_django/settings.py" />
-        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/docker_hello_django/docker_hello_django/settings/development.py" />
         <option value="$PROJECT_DIR$/docker_hello_django/docker_hello_django/settings/production.py" />
         <option value="$PROJECT_DIR$/docker_hello_django/docker_hello_django/settings/base.py" />
-        <option value="$PROJECT_DIR$/docker-compose.yaml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docker_hello_django/uwsgi_params" />
         <option value="$PROJECT_DIR$/docker_hello_django/uwsgi_development.ini" />
@@ -114,12 +116,14 @@
         <option value="$PROJECT_DIR$/uwsgi/uwsgi_production.ini" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/uwsgi/uwsgi_development.ini" />
+        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
+        <option value="$PROJECT_DIR$/docker-compose.yaml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="269" />
-    <option name="y" value="55" />
+    <option name="x" value="289" />
+    <option name="y" value="42" />
     <option name="width" value="1606" />
     <option name="height" value="898" />
   </component>
@@ -134,31 +138,6 @@
             <path>
               <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-hello-django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-hello-django" type="462c0819:PsiDirectoryNode" />
-              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-hello-django" type="462c0819:PsiDirectoryNode" />
-              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
-              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-hello-django" type="462c0819:PsiDirectoryNode" />
-              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
-              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-hello-django" type="462c0819:PsiDirectoryNode" />
-              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
-              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
-              <item name="wsgi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
@@ -222,7 +201,7 @@
       <updated>1555924114382</updated>
       <workItem from="1555924116144" duration="1926000" />
       <workItem from="1555927182106" duration="50000" />
-      <workItem from="1555979808543" duration="10047000" />
+      <workItem from="1555979808543" duration="12116000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1555924749008</created>
@@ -238,17 +217,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555984919882</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Docker 컨테이너에서 uwsgi 동작 확인 완료&#10;&#10;uwsgi 개발/프로덕션 설정 분리&#10;random password non-root user 실행으로 시스템 보안 향상&#10;nginx없이 동작 테스트를 하기 위해 socket 대신 http로 임시 설정">
+      <created>1555996535193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555996535193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12023000" />
+    <option name="totallyTimeSpent" value="14092000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="545" y="137" width="1606" height="898" extended-state="0" />
+    <frame x="289" y="42" width="1606" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25639385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25575447" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,7 +263,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="도커에서 장고 웹 작동확인 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="도커에서 장고 웹 작동확인 완료" />
+    <MESSAGE value="Docker 컨테이너에서 uwsgi 동작 확인 완료&#10;&#10;uwsgi 개발/프로덕션 설정 분리&#10;random password non-root user 실행으로 시스템 보안 향상&#10;nginx없이 동작 테스트를 하기 위해 socket 대신 http로 임시 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker 컨테이너에서 uwsgi 동작 확인 완료&#10;&#10;uwsgi 개발/프로덕션 설정 분리&#10;random password non-root user 실행으로 시스템 보안 향상&#10;nginx없이 동작 테스트를 하기 위해 socket 대신 http로 임시 설정" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docker_hello_django/manage.py">
@@ -291,13 +278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -350,13 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker_hello_django/docker_hello_django/wsgi/wsgi_development.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -394,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="103" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uwsgi/uwsgi_production.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -408,10 +374,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="103" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uwsgi/uwsgi_development.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
         </state>
       </provider>
     </entry>
