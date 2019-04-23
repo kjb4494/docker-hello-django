@@ -10,7 +10,7 @@ services:
     depends_on:
       - hello_world
   hello_world:
-    image: asia.gcr.io/hsgitlab-777/hello-world:1.1
+    image: asia.gcr.io/hsgitlab-777/hello-world:1.2
     volumes:
       - /tmp:/tmp
     command: uwsgi --ini uwsgi_development.ini
