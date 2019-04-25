@@ -1,16 +1,6 @@
 version : '2'
 services:
-  nginx:
-    image: nginx:latest
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx_development:/etc/nginx/conf.d
-      - ./uwsgi:/uwsgi
-      - /tmp:/tmp
-    depends_on:
-      - hello_world
-  hello_world:
+  web:
     image: asia.gcr.io/hsgitlab-777/hello-world:1.2
     volumes:
       - /tmp:/tmp

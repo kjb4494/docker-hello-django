@@ -38,11 +38,21 @@
 - [*Nginx와 uWSGI간 통신 설정하기*](http://blog.ditullio.fr/2016/07/24/docker-django-uwsgi-nginx-web-app/)
 - [*컨테이너간 디렉토리 공유하기*](https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers)
     ```
-    Note: 포트를 이용한 TCP통신보 패킷의 오버헤드가 적은 유닉스 소켓 통신이 더 빠르기 때문에,
+    Note: 포트를 이용한 TCP통신보다 패킷의 오버헤드가 적은 유닉스 소켓 통신이 더 빠르기 때문에,
     컨테이너간(uWSGI, Nginx) 공유 디렉토리를 생성해 소켓을 공유하는 방법을 사용한다.
     ```
 - [*gce를 기반으로 한 배포 자동화 Tip*](https://stackoverflow.com/questions/46349803/is-there-a-way-to-automatically-deploy-to-gce-based-on-a-new-image-being-created)
 - Docker 설치하기
     ```
     sudo sh get-docker.sh
+    sudo usermod -aG docker $USER
+    sudo systemctl restart docker
+    ```
+- Nginx 설치 및 설정하기
+    ```
+    sudo apt-get install nginx
+    sudo ln -s /home/macsm/docker-hello-django/nginx_development/nginx.conf /etc/nginx/sites-enabled/
+    sudo mkdir /uwsgi
+    sudo cp uwsgi/uwsgi_params /uwsgi/
+    sudo systemctl restart nginx
     ```
