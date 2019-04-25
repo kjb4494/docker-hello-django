@@ -63,3 +63,8 @@
     
     sudo systemctl restart nginx
     ```
+    
+#### GCE Todo List 요약
+- docker, docker-compose, nginx 설치
+- uwsgi_params, nginx.conf path 설정
+- docker-compose 실행
