@@ -52,8 +52,14 @@
 - Nginx 설치 및 설정하기
     ```
     sudo apt-get install nginx
-    sudo ln -s /home/macsm/docker-hello-django/nginx_development/nginx.conf /etc/nginx/sites-enabled/
+    sudo rm /etc/nginx/sites-enabled/default
+    
+    sudo mkdir /nginx
+    sudo cp nginx_development/nginx.conf /nginx/
+    sudo ln -s /nginx/nginx.conf /etc/nginx/sites-enabled/
+    
     sudo mkdir /uwsgi
     sudo cp uwsgi/uwsgi_params /uwsgi/
+    
     sudo systemctl restart nginx
     ```
