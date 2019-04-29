@@ -9,17 +9,17 @@ steps:
   args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker pull $_IMAGE:$_VERSION']
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE',  '--command', 'docker run --restart always --name $_CONTAINER_NAME -d -v /tmp:/tmp --log-driver=gcplogs $_IMAGE:$_VERSION']
+  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE',  '--command', 'docker run --restart always --name $_CONTAINER_NAME-$_VERSION -d -v /tmp:/tmp --log-driver=gcplogs $_IMAGE:$_VERSION']
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker stop $(docker ps -a | grep -v $_CONTAINER_NAME | awk "NR>1 {print $1}")']
+  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker stop $(docker ps -a | grep -v $_CONTAINER_NAME-$_VERSION | awk "NR>1 {print $1}")']
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker rm $(docker ps -a | grep -v $_CONTAINER_NAME | awk "NR>1 {print $1}")']
+  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker rm $(docker ps -a | grep -v $_CONTAINER_NAME-$_VERSION | awk "NR>1 {print $1}")']
 
 substitutions:
   _SERVER: 'devops-gce'
   _ZONE: 'us-central1-c'
   _IMAGE: 'asia.gcr.io/hsgitlab-777/hello-world'
-  _CONTAINER_NAME: 'hello-world-$_VERSION'
+  _CONTAINER_NAME: 'hello-world'
   _VERSION: '1.6'
