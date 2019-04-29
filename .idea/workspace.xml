@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloudbuild.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -131,6 +131,13 @@
               <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker-hello-django" type="462c0819:PsiDirectoryNode" />
               <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
+              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-hello-django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-hello-django" type="462c0819:PsiDirectoryNode" />
+              <item name="docker_hello_django" type="462c0819:PsiDirectoryNode" />
               <item name="hello_world" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,7 +217,7 @@
       <workItem from="1556182140903" duration="124000" />
       <workItem from="1556268963873" duration="413000" />
       <workItem from="1556497873277" duration="16000" />
-      <workItem from="1556505897897" duration="8821000" />
+      <workItem from="1556505897897" duration="11097000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1555924749008</created>
@@ -429,11 +436,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556521807909</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="cloud build gce connection test">
+      <created>1556521880246</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1556521880246</updated>
+    </task>
+    <task id="LOCAL-00033" summary="cloud build gce connection test">
+      <created>1556522365966</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1556522365966</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35970000" />
+    <option name="totallyTimeSpent" value="38246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="251" y="42" width="1669" height="957" extended-state="0" />
@@ -633,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudbuild.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
