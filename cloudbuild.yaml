@@ -22,4 +22,4 @@ substitutions:
   _ZONE: 'us-central1-c'
   _IMAGE: 'asia.gcr.io/hsgitlab-777/hello-world'
   _CONTAINER_NAME: 'hello-world'
-  _VERSION: '1.6.1'
+  _VERSION: '1.6'

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9c31576-6347-403b-9062-6792fac53c6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudbuild.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloudbuild.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="103" selection-start-line="14" selection-start-column="103" selection-end-line="14" selection-end-column="103" />
+            <state relative-caret-position="360">
+              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -92,8 +91,8 @@
         <option value="$PROJECT_DIR$/nginx_development/nginx.conf" />
         <option value="$PROJECT_DIR$/docker-compose.yaml" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker_hello_django/hello_world/views.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/docker_hello_django/hello_world/views.py" />
         <option value="$PROJECT_DIR$/cloudbuild.yaml" />
       </list>
     </option>
@@ -218,7 +217,7 @@
       <workItem from="1556182140903" duration="124000" />
       <workItem from="1556268963873" duration="413000" />
       <workItem from="1556497873277" duration="16000" />
-      <workItem from="1556505897897" duration="11843000" />
+      <workItem from="1556505897897" duration="12279000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1555924749008</created>
@@ -465,11 +464,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556525075686</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="cloud build auto deploy test">
+      <created>1556525501124</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1556525501124</updated>
+    </task>
+    <task id="LOCAL-00037" summary="cloud build auto deploy final test">
+      <created>1556525722733</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1556525722733</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38992000" />
+    <option name="totallyTimeSpent" value="39428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="251" y="42" width="1669" height="957" extended-state="0" />
@@ -516,7 +529,8 @@
     <MESSAGE value="cloud build test" />
     <MESSAGE value="cloud build gce connection test" />
     <MESSAGE value="cloud build auto deploy test" />
-    <option name="LAST_COMMIT_MESSAGE" value="cloud build auto deploy test" />
+    <MESSAGE value="cloud build auto deploy final test" />
+    <option name="LAST_COMMIT_MESSAGE" value="cloud build auto deploy final test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docker_hello_django/manage.py">
@@ -637,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker_hello_django/hello_world/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -668,10 +675,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker_hello_django/hello_world/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloudbuild.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="103" selection-start-line="14" selection-start-column="103" selection-end-line="14" selection-end-column="103" />
+        <state relative-caret-position="360">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
