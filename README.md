@@ -64,15 +64,8 @@
     
     sudo systemctl restart nginx
     ```
-- Version update command
-    ```
-    docker pull asia.gcr.io/hsgitlab-777/hello-world && \
-    docker stop macsm_web_1 && \
-    docker rm macsm_web_1 && \
-    docker-compose up
-    ```
     
 #### GCE Todo List 요약
-- docker, docker-compose, nginx 설치
+- docker, nginx 설치
 - uwsgi_params, nginx.conf path 설정
-- docker-compose 실행
+- google cloud builder 및 cloudbuild.yaml 파일 설정
