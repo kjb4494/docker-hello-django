@@ -10,7 +10,7 @@ steps:
 
 # Connect to GCE server and pull new image
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker-compose up']
+  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker pull asia.gcr.io/hsgitlab-777/hello-world']
 
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE',  '--command',
