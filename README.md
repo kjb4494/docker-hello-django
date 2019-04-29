@@ -64,6 +64,13 @@
     
     sudo systemctl restart nginx
     ```
+- Version update command
+    ```
+    docker pull asia.gcr.io/hsgitlab-777/hello-world && \
+    docker stop macsm_web_1 && \
+    docker rm macsm_web_1 && \
+    docker-compose up
+    ```
     
 #### GCE Todo List 요약
 - docker, docker-compose, nginx 설치
