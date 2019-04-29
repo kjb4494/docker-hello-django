@@ -64,6 +64,11 @@
     
     sudo systemctl restart nginx
     ```
+- backup 스크립트 실행하기 (스크립트 미완성)
+    ```
+    gcloud compute ssh devops-gce --zone us-central1-c --command "/backup/backup-util.sh asia.gcr.io/hsgitlab-777/hello-world:1.0.1"
+    매개변수로 이미지명을 입력
+    ```
     
 #### GCE Todo List 요약
 - docker, nginx 설치
