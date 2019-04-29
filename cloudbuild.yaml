@@ -10,7 +10,7 @@ steps:
 
 # Connect to GCE server and pull new image
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'gcloud docker -- pull gcr.io/my-project/my-image:latest']
+  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker-compose up']
 
 substitutions:
   _SERVER: 'devops-gce'
