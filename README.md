@@ -43,7 +43,6 @@
     ```
 - [*gce를 기반으로 한 배포 자동화 Tip*](https://stackoverflow.com/questions/46349803/is-there-a-way-to-automatically-deploy-to-gce-based-on-a-new-image-being-created)
 - [*gce, cloud-builder, gcr*](https://medium.com/google-cloud/continuous-delivery-in-google-cloud-platform-cloud-build-with-compute-engine-a95bf4fd1821)
-    ![gce](https://cdn-images-1.medium.com/max/800/1*7jgRq7Octg2ZpS7i4vpKxw.png)
 - Docker 설치하기
     ```
     sudo sh get-docker.sh
