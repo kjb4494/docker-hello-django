@@ -13,3 +13,4 @@ RUN python3 manage.py migrate --settings=docker_hello_django.settings.developmen
     mkdir /uwsgi
 WORKDIR /uwsgi
 ADD uwsgi .
+CMD ["uwsgi", "--ini", "uwsgi_development.ini"]
