@@ -1,8 +1,17 @@
-steps:
-# Build Docker image: docker build -f Dockerfile -t gcr.io/my-project/my-image:latest .
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-f', 'Dockerfile', '-t', 'gcr.io/hsgitlab-777/hellow-world:latest', '.']
+#steps:
+## Build Docker image: docker build -f Dockerfile -t gcr.io/my-project/my-image:latest .
+#- name: 'gcr.io/cloud-builders/docker'
+#  args: ['build', '-f', 'Dockerfile', '-t', 'asia.gcr.io/hsgitlab-777/hellow-world:latest', '.']
+#
+## Push to GCR: gcloud docker -- push gcr.io/my-project/my-image:latest
+#- name: 'gcr.io/cloud-builders/docker'
+#  args: ['push', 'asia.gcr.io/hsgitlab-777/hello-world:latest']
 
-# Push to GCR: gcloud docker -- push gcr.io/my-project/my-image:latest
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/hsgitlab-777/hellow-world:latest']
+
+# Connect to GCE server and pull new image
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'gcloud docker -- pull gcr.io/my-project/my-image:latest']
+
+substitutions:
+  _SERVER: 'devops-gce'
+  _ZONE: 'us-central1-c'
