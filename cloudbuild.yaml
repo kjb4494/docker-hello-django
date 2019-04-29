@@ -13,8 +13,7 @@ steps:
   args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE', '--command', 'docker pull asia.gcr.io/hsgitlab-777/hello-world']
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE',  '--command',
-         'docker run --name hello-world -v /tmp:/tmp -it asia.gcr.io/hsgitlab-777/hello-world /bin/bash -c "uwsgi --ini uwsgi_development.ini"']
+  args: ['compute', 'ssh', '$_SERVER', '--zone', '$_ZONE',  '--command', "docker run --name hello-world -v /tmp:/tmp -it asia.gcr.io/hsgitlab-777/hello-world /bin/bash -c 'uwsgi --ini uwsgi_development.ini'"]
 
 substitutions:
   _SERVER: 'devops-gce'
