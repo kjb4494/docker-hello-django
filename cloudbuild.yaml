@@ -19,4 +19,3 @@ steps:
 substitutions:
   _SERVER: 'devops-gce'
   _ZONE: 'us-central1-c'
-
