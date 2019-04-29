@@ -1,4 +1,4 @@
-#steps:
+steps:
 ## Build Docker image: docker build -f Dockerfile -t gcr.io/my-project/my-image:latest .
 #- name: 'gcr.io/cloud-builders/docker'
 #  args: ['build', '-f', 'Dockerfile', '-t', 'asia.gcr.io/hsgitlab-777/hellow-world:latest', '.']
