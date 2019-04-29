@@ -64,10 +64,10 @@
     
     sudo systemctl restart nginx
     ```
-- backup 스크립트 실행하기 (스크립트 미완성)
+- backup 스크립트 실행하기 (기능만 구현 - 오류제어 구현 x)
     ```
-    gcloud compute ssh devops-gce --zone us-central1-c --command "/backup/backup-util.sh asia.gcr.io/hsgitlab-777/hello-world:1.0.1"
-    매개변수로 이미지명을 입력
+    gcloud compute ssh devops-gce --zone us-central1-c --command "sudo /backup/backup-util.sh 1.0.0"
+    매개변수로 이미지 버전 입력
     ```
     
 #### GCE Todo List 요약
