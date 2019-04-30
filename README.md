@@ -1,24 +1,22 @@
 ## Docker Image Test Project
 
-#### 메모장
+#### 요구사항
+- nginx
+- uWSGI
+- django
+- docker
+- gcloud
+#### 아키텍처
 - [*Docker 환경 아키텍처*](https://whatisthenext.tistory.com/124)
 ![아키텍처](http://i.imgur.com/haqK19z.png)
  
-    - 아키텍처 수정사항
+    - 아키텍처 상세사항
         ```
         1. nginx를 호스트에 배치한다.
         2. uWSGI이하를 컨테이너에 배치한다.
         3. 호스트와 컨테이너간 공유 디렉토리를 통해 socket 통신을 한다.
         4. gcr과 cloud builder를 이용해 이미지를 배포한다.
         ```
-- 준비 사항
-    ```
-    1. Nginx
-    2. uWSGI
-    3. Django
-    4. Docker
-    5. gcloud
-    ```
 #### 명령어 모음
 - cloudbuild에 사용된 docker 명령어
     ```
