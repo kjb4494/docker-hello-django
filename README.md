@@ -48,7 +48,6 @@
     sudo sh get-docker.sh
     sudo usermod -aG docker $USER
     sudo systemctl restart docker
-    sudo apt-get install docker-compose
     ```
 - Nginx 설치 및 설정하기
     ```
